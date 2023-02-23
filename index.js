@@ -1,5 +1,5 @@
 const comtainer = document.querySelector('.main__comtainer');
-const findlocation = document.querySelector('.find__location');
+const findlocation = document.querySelector('.find__location button');
 const notfound = document.querySelector('.not__found');
 const weathercomtainer = document.querySelector('.weather__comtainer');
 const weatherdeails = document.querySelector('.weather__deails');
@@ -16,12 +16,13 @@ findlocation.addEventListener('click', () => {
     .then((json) => {
       if (json === '404') {
         comtainer.style.height = '400px';
-        weathercomtainer.style.display = 'none';
-        weatherdeails.style.display = 'none';
+        weathercomtainer.style.display = 'block';
+        weatherdeails.style.display = 'block';
         notfound.style.display = 'block';
         notfound.classList.add('fadeIn');
         return;
       }
+      comtainer.style.height = '605px;';
       notfound.style.display = 'none';
       notfound.classList.remove('fadeIn');
 
