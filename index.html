@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Weather-App</title>
-</head>
-<body>
-    <div class="main__comtainer"></div>
-</body>
+  </head>
+  <body>
+    <div class="main__comtainer">
+      <div class="find__location">
+        <img
+          src="img/icons8-location-24.png"
+          alt="location"
+          >
+        <input type="text" placeholder="Enter your location">
+        <button>
+          Go
+          <!-- <img class="found " src="img/icons8-found-24.png" alt="found"> -->
+        </button>
+      </div>
+      <div class="not__found">
+        <img class="error__img" src="img/error.svg" alt="error">
+        <p>404 error</p>
+      </div>
+      <div class="weather__comtainer">
+        <img src="">
+        <p class="temperature"></p>
+        <p class="description"></p>
+      </div>
+      <div class="weather__deails">
+        <div class="humidity">
+          <img src="img/icons8-duststorm-48.png" alt="humidity">
+          <div class="text">
+            <span></span>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="wind">
+            <img src="img/icons8-duststorm-48.png" alt="duststorm">
+          <div class="text">
+            <span></span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
