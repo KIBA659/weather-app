@@ -72,7 +72,7 @@ findlocation.addEventListener("click", () => {
         temperature.innerHTML = `${parseInt(json.main.temp)}°C`;
         description.innerHTML = `${json.weather[0].description}`;
         humidity.innerHTML = `${json.main.humidity}%`;
-        wind.innerHTML = `${json.wind.speed}m/s ${way}`;
+        wind.innerHTML = `${json.wind.speed}m/s ${deg} ${way}`;
         visibility.innerHTML = `${(json.visibility / 1000).toFixed(2)}Km`;
         pressure.innerHTML = `${json.main.pressure}hPa`;
 
